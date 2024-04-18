@@ -27,7 +27,7 @@ std::vector<std::string>> statetab, std::string(* text)) {
     std::vector<std::string> variable = statetab[*start];
     int index = 0;
     if (variable.size() > 0) {
-        index = rand() % variable.size();
+        index = std::rand() % variable.size();
         *text = *text + variable[index] + " ";
         (*start).pop_front();
         (*start).push_back(variable[index]);
