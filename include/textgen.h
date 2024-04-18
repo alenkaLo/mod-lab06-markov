@@ -1,3 +1,4 @@
+// Copyright 2024 alenkaLo
 #pragma once
 #include <iostream>
 #include <fstream>
