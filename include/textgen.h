@@ -10,11 +10,11 @@
 #include <ctime>
 
 typedef std::deque<std::string> prefix;
-std::string generateText (int NPREF, int MAXGEN,
+std::string generateText(int NPREF, int MAXGEN,
     prefix start, std::map<prefix,
     std::vector<std::string>> statetab);
 
-std::string genWord (prefix* start, std::map<prefix,
+std::string genWord(prefix* start, std::map<prefix,
     std::vector<std::string>> statetab, std::string& text);
 
 std::map<prefix, std::vector<std::string>>
