@@ -7,10 +7,10 @@ ReadFile(int NPREF, std::string path) {
     std::string word;
     std::ifstream in(path);
     if (in.is_open()) {
-        while (in >> word){
+        while (in >> word) {
             if (pref.size() < NPREF) {
                 pref.push_back(word);
-            }else {
+            } else {
                 statetab[pref].push_back(word);
                 pref.push_back(word);
                 pref.pop_front();
@@ -21,8 +21,9 @@ ReadFile(int NPREF, std::string path) {
     return statetab;
 }
 
-std::string genWord(std::deque<std::string>(* start), std::map<std::deque<std::string>,
-std::vector<std::string>> statetab, std::string(* text)){
+std::string genWord(std::deque<std::string>(* start),
+std::map<std::deque<std::string>,
+std::vector<std::string>> statetab, std::string(* text)) {
     std::vector<std::string> variable = statetab[*start];
     int index = 0;
     if (variable.size() > 0) {
