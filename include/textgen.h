@@ -15,7 +15,7 @@ std::string generateText(int NPREF, int MAXGEN,
     std::vector<std::string>> statetab);
 
 std::string genWord(prefix* start, std::map<prefix,
-    std::vector<std::string>> statetab, std::string& text);
+    std::vector<std::string>> statetab, std::string* text);
 
 std::map<prefix, std::vector<std::string>>
 ReadFile(int NPREF, std::string path);
