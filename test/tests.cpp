@@ -1,6 +1,6 @@
 // Copyright 2024 alenkaLo
 #include <gtest/gtest.h>
-#include "..\6.Markov\textgen.h"
+#include "../include/textgen.h"
 TEST(TestCaseName, TestName2) {
     std::string path = "InputText.txt";
     std::map<prefix, std::vector<std::string>> statetab;
