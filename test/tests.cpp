@@ -14,7 +14,7 @@ TEST(TestCaseName, TestName1) {
 }
 
 TEST(TestCaseName, TestName2) {
-    std::string path = "test.txt";
+    std::string path = "mod-lab06-markov/test/test.txt";
     std::map<prefix, std::vector<std::string>> statetab;
     statetab =  ReadFile(2, path);
     prefix pref;
