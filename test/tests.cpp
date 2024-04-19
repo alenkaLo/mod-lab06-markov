@@ -1,11 +1,11 @@
 // Copyright 2024 alenkaLo
 #include <gtest/gtest.h>
 #include "../include/textgen.h"
-#include"../src/textgen.cpp"
+//#include "../src/textgen.cpp"
 
 
 TEST(TestCaseName, TestName1) {
-	std::string path = "test/test.txt";
+    std::string path = "test/test.txt";
     std::map<prefix, std::vector<std::string>> statetab;
     statetab = ReadFile(2, path);
     prefix start = { "I", "can" };
@@ -14,7 +14,7 @@ TEST(TestCaseName, TestName1) {
 }
 
 TEST(TestCaseName, TestName2) {
-    std::string path = "mod-lab06-markov/test/test.txt";
+    std::string path = "test/test.txt";
     std::map<prefix, std::vector<std::string>> statetab;
     statetab =  ReadFile(2, path);
     prefix pref;
@@ -24,8 +24,8 @@ TEST(TestCaseName, TestName2) {
 }
 
 TEST(TestCaseName, TestName3) {
-    std::string path = "test.txt";
-    //I can swim, I can run, I am strong and beautiful. 
+    std::string path = "test/test.txt";
+    //I can swim, I can run, I am strong and beautiful.
     std::map<prefix, std::vector<std::string>> statetab;
     statetab = ReadFile(2, path);
     std::map<prefix, std::vector<std::string>> exp = {
