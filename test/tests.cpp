@@ -5,7 +5,7 @@
 
 
 TEST(TestCaseName, TestName1) {
-	std::string path = "test.txt";
+	std::string path = "test/test.txt";
     std::map<prefix, std::vector<std::string>> statetab;
     statetab = ReadFile(2, path);
     prefix start = { "I", "can" };
